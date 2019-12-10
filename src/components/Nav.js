@@ -13,23 +13,20 @@ export default class Nav extends Component {
 
     }
 
-    navClick(e,id){
-        console.log(e.target.id);
-    }
-
+    
     render() {
         return (
             <nav>
                 <ul>
-                    <Link id="home"  to='/' onClick={this.navClick(id)}>
+                    <Link id="home"  to='/' >
                         <li>Home</li>
                     </Link>
     
-                    <Link id="about" to='/about' onClick={this.navClick(id)}>
+                    <Link id="about" to='/about' >
                         <li>About</li>
                     </Link>
     
-                    <Link id="shop" to='/shop' onClick={this.navClick(id)}>
+                    <Link id="shop" to='/shop' >
                         <li>Shop</li>
                     </Link>
                 </ul>
